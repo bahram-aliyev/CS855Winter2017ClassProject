@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'FinalProject' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FinalProject
+  pod 'BadgeSwift', '~> 4.0'
+  pod 'ActiveLabel', '~> 0.7'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'Validator', '~> 2.1'
+  pod 'SQLite.swift', '~> 0.11'
+  pod 'Toast-Swift', '~> 2.0.0'
+  pod 'SwiftyJSON', '~> 3.1'
+
+  target 'FinalProjectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

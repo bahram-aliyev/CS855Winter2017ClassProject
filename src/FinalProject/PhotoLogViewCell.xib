@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="205" id="KGk-i7-Jjw" customClass="PhotoLogViewCell" customModule="FinalProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="205"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="204.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cXi-z8-8sI">
+                        <rect key="frame" x="8" y="8" width="304" height="188.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="PR6-ft-fOz">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3x-f4-U4V">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aded photo" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFz-8j-S76">
+                                        <rect key="frame" x="121" y="0.0" width="183" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="CSK-I3-64D"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ji-fy-GzW">
+                                <rect key="frame" x="80" y="24.5" width="144" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3ji-fy-GzW" secondAttribute="height" multiplier="1:1" id="9cb-Zh-OBw"/>
+                                    <constraint firstAttribute="height" constant="144" id="oIK-6B-28w"/>
+                                    <constraint firstAttribute="width" constant="144" id="rYX-dH-BhQ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="JMk-0o-e6V">
+                                <rect key="frame" x="0.0" y="172.5" width="304" height="16"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29 Mar 2017 1:13 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pU6-Up-bD3" userLabel="Entry Date Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="16"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="JMk-0o-e6V" secondAttribute="trailing" id="Nca-ZP-yEt"/>
+                            <constraint firstItem="JMk-0o-e6V" firstAttribute="bottom" secondItem="cXi-z8-8sI" secondAttribute="bottomMargin" id="axT-wa-efO"/>
+                            <constraint firstItem="JMk-0o-e6V" firstAttribute="leading" secondItem="cXi-z8-8sI" secondAttribute="leadingMargin" id="tq5-bq-5SW"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="cXi-z8-8sI" secondAttribute="bottom" id="7qH-jW-a6c"/>
+                    <constraint firstItem="cXi-z8-8sI" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Bka-E5-IJf"/>
+                    <constraint firstItem="cXi-z8-8sI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="HtZ-sf-12E"/>
+                    <constraint firstItem="cXi-z8-8sI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ebJ-VV-ER0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorLbl" destination="H3x-f4-U4V" id="hpW-WI-MRt"/>
+                <outlet property="entryDateLbl" destination="pU6-Up-bD3" id="6mq-X4-mA0"/>
+                <outlet property="thumbnailImg" destination="3ji-fy-GzW" id="I4o-QV-xPR"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="134.5"/>
+        </tableViewCell>
+    </objects>
+</document>
